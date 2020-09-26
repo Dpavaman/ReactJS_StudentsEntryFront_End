@@ -81,7 +81,6 @@ class App extends React.Component {
       })
     }
     document.getElementById('form').reset()
-    console.log(this.state.users);
   }
 
   componentDidMount() {
@@ -118,7 +117,6 @@ class App extends React.Component {
     axios.delete(api + `/${id}`).then(() => {
       this.componentDidMount()
     })
-    console.log(id);
   }
 
   render() {
